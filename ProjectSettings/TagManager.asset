@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Leap
   - Oculus
+  - Tip
+  - Write
+  - Erase
+  - Ink
+  - Writeable
   layers:
   - Default
   - TransparentFX

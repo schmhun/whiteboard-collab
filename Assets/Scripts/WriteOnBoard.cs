@@ -47,7 +47,7 @@ public class WriteOnBoard : MonoBehaviour {
             tipPrefer = tipLeft;
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         Debug.Log("Collision detected!");
         if (other.gameObject.name == tipPrefer.name)
@@ -60,4 +60,5 @@ public class WriteOnBoard : MonoBehaviour {
             //Debug.Log("No writeable collision found.");
         }
     }
+
 }

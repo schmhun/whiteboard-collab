@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class WriteOnBoard : MonoBehaviour {
 
+    private const string Path = "Materials/InkBlack";
     private GameObject tipLeft;
     private GameObject tipRight;
     private GameObject tipPrefer;
     private GameObject[] tips;
     public bool preferRight = true;
 
-    public GameObject inkPrefab;
+    //public GameObject inkPrefab;
+    public Material new_Material;
+    public Renderer obj;
 
 	// Use this for initialization
 	void Start () {
+        new_Material = (Material) Resources.Load(Path, typeof(Material));
+        obj = GetComponent<Renderer>();
         FindTips();
 	}
 	
@@ -47,17 +52,22 @@ public class WriteOnBoard : MonoBehaviour {
             tipPrefer = tipLeft;
         }
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collision detected!");
+        //Debug.Log("Collision detected!");
+        //Debug.Log("Collider name: " + other.gameObject.name);
+        //Debug.Log("PreferTip name: " + tipPrefer.name);
         if (other.gameObject.name == tipPrefer.name)
         {
-            Debug.Log("We can write here!");
-            GameObject clone = Instantiate(inkPrefab, other.transform.position, other.transform.rotation, transform);
+            //Debug.Log("We can write here!");
+            //GameObject clone = Instantiate(inkPrefab, other.transform.position, other.transform.rotation, transform);
+            // Change the material on this pixel
+            obj.material = new_Material;
+            //Debug.Log("Name of newmat: " + new_Material.color);
         }
         else
         {
-            //Debug.Log("No writeable collision found.");
+            Debug.Log("wtf sonja.");
         }
     }
 

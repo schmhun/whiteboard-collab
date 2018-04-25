@@ -192,6 +192,10 @@ Prefab:
       propertyPath: _manager
       value: 
       objectReference: {fileID: 1795796817}
+    - target: {fileID: 1436120172061346, guid: 28807ce704ae8bf4188e7fbccd34491f, type: 2}
+      propertyPath: m_TagString
+      value: Writeable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28807ce704ae8bf4188e7fbccd34491f, type: 2}
   m_IsPrefabParent: 0
@@ -754,11 +758,23 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 819448845}
   m_Material: {fileID: 13400000, guid: 21499581201963b4fba59af488b4b08c, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &819448848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 819448845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954136f9ab0c7514696e73e44c7fd7d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  new_Material: {fileID: 0}
 --- !u!1 &930141238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,7 +2280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1778879561
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2603,11 +2619,11 @@ MonoBehaviour:
   boardParent: {fileID: 1525298414910370, guid: 78db2c21dff591840bd9268272d09de9,
     type: 2}
   buffX: 0
-  buffY: 1
+  buffY: 5
   buffZ: 1
-  gridX: 50
-  gridY: 50
-  spacing: 0.02
+  gridX: 100
+  gridY: 100
+  spacing: 0.011
 --- !u!4 &1933640967
 Transform:
   m_ObjectHideFlags: 0

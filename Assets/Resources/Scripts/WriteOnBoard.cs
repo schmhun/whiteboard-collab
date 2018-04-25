@@ -52,6 +52,7 @@ public class WriteOnBoard : MonoBehaviour {
             tipPrefer = tipLeft;
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("Collision detected!");

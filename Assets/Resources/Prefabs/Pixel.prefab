@@ -22,15 +22,15 @@ GameObject:
   - component: {fileID: 33391799731131372}
   - component: {fileID: 65587842917042628}
   - component: {fileID: 23385964735239650}
-  - component: {fileID: 114822552233623250}
   - component: {fileID: 54019237619072800}
   - component: {fileID: 114464730246539438}
+  - component: {fileID: 114384841080432060}
   m_Layer: 0
   m_Name: Pixel
-  m_TagString: Untagged
+  m_TagString: Writeable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4312178613274196
 Transform:
@@ -108,11 +108,23 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1436120172061346}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114384841080432060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436120172061346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac78e07ab2b8fea4c977e88d3ee20419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_renderer: {fileID: 0}
 --- !u!114 &114464730246539438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -143,17 +155,3 @@ MonoBehaviour:
     layerIndex: 0
   _eventTable:
     _entries: []
---- !u!114 &114822552233623250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1436120172061346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36401583c0a1b2d4e976c815e15b416a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  preferRight: 1
-  new_Material: {fileID: 0}
-  obj: {fileID: 23385964735239650}

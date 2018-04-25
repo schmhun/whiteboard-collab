@@ -21,16 +21,17 @@ public class SpawnBoardOnStartup : MonoBehaviour {
     void Start()
     {
         Vector3 start = new Vector3(0,0,0);
-        boardParent = Instantiate(boardParent, start, Quaternion.identity);
+        //boardParent = Instantiate(boardParent, start, Quaternion.identity);
 
         for (float y = 0; y < gridY; y+=1f)
         {
-            Debug.Log("This is y: " + y);
+            //Debug.Log("This is y: " + y);
             for (float x = 0; x < gridX; x+=1f)
             {
-                Debug.Log("This is x: " + x);
+                //Debug.Log("This is x: " + x);
                 Vector3 pos = new Vector3(x+buffX, y+buffY, 0) * spacing;
-                Instantiate(prefab, pos, Quaternion.identity, boardParent.transform);
+                //Instantiate(prefab, pos, Quaternion.identity, boardParent.transform);
+                Instantiate(prefab, pos, Quaternion.identity);
             }
         }
         Debug.Log("Complete Startup");

@@ -58,6 +58,7 @@ public class WriteOnBoard : MonoBehaviour {
         //Debug.Log("Collision detected!");
         //Debug.Log("Collider name: " + other.gameObject.name);
         //Debug.Log("PreferTip name: " + tipPrefer.name);
+        Debug.Log(gameObject.name);
         if (other.gameObject.name == tipPrefer.name)
         {
             //Debug.Log("We can write here!");

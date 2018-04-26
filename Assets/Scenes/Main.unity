@@ -2619,7 +2619,7 @@ MonoBehaviour:
   boardParent: {fileID: 1525298414910370, guid: 78db2c21dff591840bd9268272d09de9,
     type: 2}
   buffX: 0
-  buffY: 5
+  buffY: 10
   buffZ: 1
   gridX: 100
   gridY: 100
